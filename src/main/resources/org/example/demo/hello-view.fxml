@@ -7,10 +7,13 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
-<GridPane stylesheets="@my.css" fx:controller="org.example.demo.HelloController" xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane alignment="center" hgap="10" stylesheets="@my.css" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/25" fx:controller="org.example.demo.HelloController">
 
 <VBox fx:id="scenePane" alignment="CENTER" prefHeight="600.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
     <padding>
@@ -65,6 +68,8 @@
          <children>
             <Label fx:id="labelCount" layoutY="27.0" text="Кількість записів:" />
             <Label fx:id="label" layoutY="55.0" text="" />
+               <Button fx:id="btnOther" layoutX="270.0" layoutY="20.0" mnemonicParsing="false" text="otherLabs" />
+               <Button fx:id="btnExit" layoutX="440.0" layoutY="20.0" mnemonicParsing="false" text="Вихід" />
          </children>
          <VBox.margin>
             <Insets left="30.0" right="30.0" />
@@ -72,4 +77,10 @@
       </AnchorPane>
    </children>
 </VBox>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
 </GridPane>
