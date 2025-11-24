@@ -54,7 +54,7 @@ public class HelloController {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("editWindow.fxml"));
         Scene scene = null;
         try {
-            scene = new Scene(fxmlLoader.load(), 400, 150);
+            scene = new Scene(fxmlLoader.load(), 450, 180);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -76,13 +76,13 @@ public class HelloController {
         Optional<ButtonType> result = alert.showAndWait();
 
         if (!result.isPresent()) {
-            labelCount.setText("No selection!");
+            label.setText("No selection!");
         } else if (result.get() == ButtonType.OK) {
-            labelCount.setText("Запис видалено!");
+            label.setText("Запис видалено!");
         } else if (result.get() == ButtonType.CANCEL) {
-            labelCount.setText("Відмінено!");
+            label.setText("Відмінено!");
         } else {
-            labelCount.setText("-");
+            label.setText("-");
         }
 
 

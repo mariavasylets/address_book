@@ -1,0 +1,87 @@
+.root, GridPane {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-background-color: #fff8f5;
+}
+
+.button {
+    -fx-background-radius: 8;
+    -fx-font-size: 14px;
+    -fx-padding: 8 20;
+    -fx-background-color: #f8d5e0;
+    -fx-text-fill: #4a4a4a;
+    -fx-cursor: hand;
+    -fx-border-color: #f2c7d5;
+    -fx-border-radius: 8;
+}
+
+.button:hover {
+    -fx-background-color: #f5c4d1;
+}
+
+.button:pressed {
+    -fx-background-color: #eeb6c5;
+}
+
+#btnSearch {
+    -fx-background-color: #cfe7f3;
+}
+
+#btnSearch:hover {
+    -fx-background-color: #b8e0f1;
+}
+
+#btnSearch:pressed {
+    -fx-background-color: #a0d8ee;
+}
+
+.text-field {
+    -fx-background-radius: 8;
+    -fx-padding: 6 10;
+    -fx-font-size: 14px;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e0dce5;
+    -fx-border-radius: 8;
+}
+
+.text-field:focused {
+    -fx-border-color: #d3b8d1;
+}
+
+.table-view {
+    -fx-background-color: #fffafc;
+    -fx-border-color: #f0e5f0;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #e9d8f5;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #4a4a4a;
+    -fx-font-weight: bold;
+}
+
+.table-row-cell {
+    -fx-background-color: #ffffff;
+    -fx-font-size: 14px;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #fdf6fb;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #e4d4eb;
+}
+
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #5a4a5a;
+}
+
+#labelCount {
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
